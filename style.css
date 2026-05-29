@@ -1,0 +1,243 @@
+
+
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+body { 
+    background-color: #EBEBEB; 
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    }
+
+.main-container { 
+    width: 100%;
+    max-width: 1200px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+
+
+header {
+    background-color: #21272B; 
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;}
+
+.logo-img {
+    height: 50px; }
+
+.logo-text h1 {
+    color: #1BB4E8; 
+    font-size: 26px;
+    font-style: italic;
+    line-height: 1; }
+
+.logo-text p {
+    color: #FFFFFF; 
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 2px; }
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; }
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: opacity 0.2s; }
+ 
+
+nav ul li a:hover {
+    opacity: 0.8; }
+
+.nav-blue {
+    color: #1BB4E8; 
+    font-weight: bold; }
+
+.nav-white {
+    color: #FFFFFF;  }
+
+.hero-banner {
+    line-height: 0;  }
+
+.hero-img-full {
+    width: 100%;
+    height: auto;
+    display: block; }
+
+
+.info-bar-container {
+    background-color: #FFFFFF;
+    padding: 0 40px;
+    margin-top: -30px; 
+    position: relative;
+    z-index: 5; }
+
+.info-bar-box {
+    background-color: #1A3243; 
+    padding: 30px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+
+.info-bar-box h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+    max-width: 55%;
+    line-height: 1.4; }
+
+.phone-block {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px 20px;
+    border-radius: 4px;
+    border-right: 4px solid #C6B07F;  }
+
+.phone-icon-mini {
+    width: 22px;
+    height: auto;  }
+
+.phone-details span {
+    display: block;
+    font-size: 13px;
+    color: #DDDDDD;
+    font-style: italic;  }
+
+.phone-details strong {
+    display: block;
+    font-size: 20px;
+    color: #C6B07F; 
+    margin-top: 2px; }
+
+
+.cards-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 50px 40px; }
+
+.content-card {
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03); }
+
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 20px;
+    color: #FFFFFF;}
+
+.header-blue {
+    background-color: #1BB4E8; }
+
+.header-gold {
+    background-color: #C6B07F; }
+
+.card-header img {
+    width: 20px;
+    height: 20px; }
+
+.card-header h2 {
+    font-size: 16px;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.5px; }
+
+.card-body {
+    padding: 25px; }
+
+.card-body h3 {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #21272B; }
+
+.card-body p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #666666;
+    margin-bottom: 25px;
+    text-align: justify; }
+
+
+.media-container {
+    border: 2px solid #C6B07F;
+    padding: 4px;
+    border-radius: 2px; }
+
+.image-stretched {
+    width: 100%;
+    display: block;
+    height: auto; }
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px; }
+
+.grid-item {
+    border: 2px solid #C6B07F;
+    padding: 4px;
+    border-radius: 2px; }
+
+.grid-item img {
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover; }
+
+
+footer {
+    background-color: #21272B;
+    padding: 25px 40px;
+    text-align: center; }
+
+footer p {
+    font-size: 12px;
+    color: #8A959E; }
+
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        gap: 15px; }
+    .info-bar-box {
+        flex-direction: column;
+        text-align: center; }
+
+    .info-bar-box h2 {
+        max-width: 100%;
+    }
+    .phone-block {
+        width: 100%;
+        justify-content: center;
+        border-right: none;
+        border-bottom: 4px solid #C6B07F;}
+
+    .cards-section {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;} }
